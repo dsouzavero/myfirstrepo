@@ -176,7 +176,7 @@
                   style="color: #fa0202; justify-content: center; align-items: center; text-shadow: 3px 5px 5px #000000;">
                   <i class="fa-brands fa-imdb"
                     style="color: #ece911; justify-content: center; align-items: center; text-shadow: 3px 5px 5px #000000;"></i>
-                  <a href="https://www.imdb.com/title/tt23849204/" target="_blank" itemprop="sameAs" title="iMDB"> iMDB:
+                  <a href="https://www.imdb.com/title/tt23849204/" target="_blank" title="IMDB link"> iMDB:
                     4.3 </a> </span>
                 <span class="review ml-3 rating-left"
                   style="color: #2c8509; justify-content: center; align-items: center; text-shadow: 3px 5px 5px #2c8509;"><i
@@ -196,13 +196,15 @@
               <p
                 style="color: #40D7BC; justify-content: center; align-items: center; text-shadow: 1px 1px 1px #000000;">
                 <strong>Directed by</strong> <span
-                  style="color: #fff; justify-content: center; align-items: center; text-shadow: 3px 5px 5px #000;">Vidhu Vinod Chopra.
+                  style="color: #fff; justify-content: center; align-items: center; text-shadow: 3px 5px 5px #000;">Vidhu
+                  Vinod Chopra.
               </p>
 
               <p
                 style="color: #40D7BC; justify-content: center; align-items: center; text-shadow: 1px 1px 1px #000000;">
                 <strong>Cast : </strong><span
-                  style="color: #fff; justify-content: center; align-items: center; text-shadow: 3px 5px 5px #000;">Vikrant Massey, Medha Shankar, Joshi Anantvijay, Anshuman Pushkar, Geeta Agrawal Sharma.
+                  style="color: #fff; justify-content: center; align-items: center; text-shadow: 3px 5px 5px #000;">Vikrant
+                  Massey, Medha Shankar, Joshi Anantvijay, Anshuman Pushkar, Geeta Agrawal Sharma.
               </p>
 
               <p
@@ -242,7 +244,14 @@
               <p
                 style="color: #40D7BC; justify-content: center; align-items: center; text-shadow: 1px 1px 1px #000000;">
                 <strong>Synopsis:</strong> <span
-                  style="color: #fff; justify-content: center; align-items: center; text-shadow: 3px 5px 5px #000;"> 12th Fail is not just a biographical drama; it's a testament to the indomitable spirit that can overcome societal expectations, academic setbacks, and personal doubts. Released on October 27, 2023, and directed by the renowned filmmaker Vidhu Vinod Chopra, the film brings to life the inspiring true stories of Manoj Kumar Sharma and Shraddha Joshi. Both individuals defied the odds, turning failures into stepping stones on their paths to becoming civil servants in India. The movie unfolds as a powerful drama, delving into the lives of Manoj and Shraddha, played by Vikrant Massey and Mithila Palkar, respectively.
+                  style="color: #fff; justify-content: center; align-items: center; text-shadow: 3px 5px 5px #000;">
+                  12th Fail is not just a biographical drama; it's a testament to the indomitable spirit that can
+                  overcome societal expectations, academic setbacks, and personal doubts. Released on October 27, 2023,
+                  and directed by the renowned filmmaker Vidhu Vinod Chopra, the film brings to life the inspiring true
+                  stories of Manoj Kumar Sharma and Shraddha Joshi. Both individuals defied the odds, turning failures
+                  into stepping stones on their paths to becoming civil servants in India. The movie unfolds as a
+                  powerful drama, delving into the lives of Manoj and Shraddha, played by Vikrant Massey and Mithila
+                  Palkar, respectively.
               </p>
 
             </div>
@@ -298,10 +307,12 @@
     </div>
     </div>
     <div class="dome-container">
-      <h1
-        style="color: #40D7BC; display: flex; justify-content: center; align-items: center; height: 10vh; text-shadow: 3px 5px 5px #000; font-size: 35px; font-weight:bold; ">
-        Watch Online 12th Fail Movie
-      </h1>
+      <a href="https://www.imdb.com/title/tt23849204/" target="_blank" title="IMDB link">
+        <h1
+          style="color: #40D7BC; display: flex; justify-content: center; align-items: center; height: 10vh; text-shadow: 3px 5px 5px #000; font-size: 35px; font-weight:bold; ">
+          Watch Online 12th Fail Movie
+        </h1>
+      </a>
       <div class="row">
         <div class="col-xl-9 nopadding">
           <div class="section__title-wrapper mb-15">
@@ -498,14 +509,14 @@
     </section>
   </footer>
 
-  <script  class="yoast-schema-graph"> 
+  <script class="yoast-schema-graph">
     function fetchMovieJsonLD(movieId) {
       fetch("/movies.json")
         .then((response) => response.json())
         .then((data) => {
           // Find the movie data with the specified ID
           const movie = data.find((item) => item.id === movieId);
-  
+
           if (movie) {
             const schemaData = {
               "@context": "https://schema.org",
@@ -548,12 +559,12 @@
                 "value": ["Desktop Web Platform", "iOS Platform", "Android Platform"]
               }
             };
-  
+
             // Create a script element for JSON-LD
             const scriptElement = document.createElement("script");
             scriptElement.type = "application/ld+json";
             scriptElement.textContent = JSON.stringify(schemaData);
-  
+
             // Append the script element to the head of the document
             document.head.appendChild(scriptElement);
           } else {
@@ -564,7 +575,7 @@
           console.error("Error fetching movie data:", error);
         });
     }
-  
+
     // Example usage:
     fetchMovieJsonLD("INDEX59"); // Replace "INDEX52" with the desired movie ID
   </script>
