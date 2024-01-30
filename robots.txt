@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://justwatch.onrender.com/sitemap.xml
