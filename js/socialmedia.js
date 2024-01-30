@@ -78,7 +78,7 @@
           window.open(
             `https://twitter.com/intent/tweet?url=${encodeURIComponent(
               movieURL
-            )}&text=Check%20out%20this%20awesome%20movie%20${encodeURIComponent(
+            )}&text=Check%20out%20this%20awesome%20HD%20movie%20${encodeURIComponent(
               movieTitle
             )}!`
           );
