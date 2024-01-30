@@ -14,7 +14,7 @@ function shareSocialMedia(platform) {
         window.open(
           `https://twitter.com/intent/tweet?url=${encodeURIComponent(
             parentURL
-          )}&text=Check%20out%20this%20awesome%20movie%20content!`
+          )}&text=Check%20out%20this%20awesome%20online%20HDmovie%20content!`
         );
         break;
       case "linkedin":
