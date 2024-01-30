@@ -80,7 +80,7 @@
               movieURL
             )}&text=Check%20out%20this%20awesome%20HD%20movie%20${encodeURIComponent(
               movieTitle
-            )}!`
+            )}`
           );
           break;
         case "linkedin":
